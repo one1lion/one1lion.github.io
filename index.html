@@ -5,10 +5,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <title>One1Lion</title>
-  <base href="/" />
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/open-iconic/font/css/open-iconic-bootstrap.min.css" />
-  <link rel="stylesheet" href="css/site.min.css" />
+  <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/open-iconic/font/css/open-iconic-bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/site.min.css" />
+</head>
+
+<body>
+  <app>Loading...</app>
+
+  <div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+  </div>
   
   <!-- Start Single Page Apps for GitHub Pages -->
   <script type="text/javascript">
@@ -41,17 +50,11 @@
     }(window.location))
   </script>
   <!-- End Single Page Apps for GitHub Pages -->
-</head>
 
-<body>
-  <app>Loading...</app>
+  <!-- Temporary polyfill for IE support -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise,fetch"></script>
 
-  <div id="blazor-error-ui">
-    An unhandled error has occurred.
-    <a href="" class="reload">Reload</a>
-    <a class="dismiss">🗙</a>
-  </div>
-  <script src="_framework/blazor.webassembly.js"></script>
+  <script src="/_framework/blazor.webassembly.js" ></script>
 </body>
 
 </html>
