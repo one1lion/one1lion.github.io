@@ -173,6 +173,45 @@ app {
 #more-less-check:checked + .intro-section .fading-tail {
   display: block; }
 
+.codeblock {
+  background-color: black;
+  color: gainsboro;
+  font-size: 18px;
+  line-height: 16px; }
+  .codeblock pre {
+    color: gainsboro;
+    font-family: Consolas;
+    padding-left: 2em; }
+  .codeblock server-side-script {
+    color: black; }
+    .codeblock server-side-script word {
+      background-color: #ffffb3; }
+  .codeblock razor-code {
+    color: gainsboro;
+    background-color: #505050; }
+  .codeblock html-tag-name,
+  .codeblock visibility-accessor-keyword,
+  .codeblock new-operator-func,
+  .codeblock primitive-type {
+    color: #569cd6; }
+  .codeblock user-class {
+    color: #4ec9b0; }
+  .codeblock string {
+    color: #d69d85; }
+  .codeblock html-tag-delimeter {
+    color: gray; }
+  .codeblock razor-tag-attribute,
+  .codeblock razor-tag-element {
+    color: teal; }
+  .codeblock local-variable {
+    color: #9cdcfe; }
+  .codeblock method {
+    color: #dcdcaa; }
+  .codeblock return-keyword {
+    color: #d8a0df; }
+  .codeblock enum-type {
+    color: #b8d7a3; }
+
 @media (min-width: 768px) {
   .preview-panel .preview-panel-samples {
     display: flex;
